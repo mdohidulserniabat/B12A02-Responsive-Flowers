@@ -1,4 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
 
 *{
     margin: 0;
@@ -8,4 +11,30 @@
 @theme {
         --color-primary: #f5f8ff;
       }
+
+@layer utilities {
+    .font-inter {
+        font-family: "Inter", sans-serif;
+    }
+    .font-noto-serif {
+        font-family: "Noto Serif", serif;
+    }
+}
+.text-left{
+    padding-left: 1rem;
+    
+}
+
+.header{
+    margin: 20px auto;
+}
+.hero{
+    margin: 20px auto;
+}
+.banner-image{
+    margin: 20px auto;
+}
+
 /* Global styles */
+
+
