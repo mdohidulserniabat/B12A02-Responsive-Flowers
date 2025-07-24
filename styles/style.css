@@ -184,6 +184,7 @@
     height: 400px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 30px;
 
  }
  .join-section-content h1{
@@ -216,6 +217,16 @@
  .email-box button{
     padding: 0 12px 0 12px;
    
+ }
+ .footer-section{
+    margin: 20px auto;
+ }
+ .brand-footer p{
+    padding: 20px 0;
+ }
+
+ .footer-nav ul li {
+    line-height: 60px;
  }
 
 
@@ -272,4 +283,9 @@
     flex: 1;
    
  }
+
+ .footer-section{
+    padding-left: 20px;
+
+}
 }
