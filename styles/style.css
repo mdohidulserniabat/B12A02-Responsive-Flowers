@@ -141,6 +141,7 @@
     height: 200px;
     border-radius: 14px;
     text-align: center;
+    overflow: hidden;
 
 
 }
@@ -152,6 +153,7 @@
     height: 200px;
     border-radius: 14px;
     text-align: center;
+    overflow: hidden;
 
 
 }
@@ -169,8 +171,53 @@
     text-align: center;
     height: 420px;
     color: white;
+    overflow: hidden;
+
 
 }
+/* join section styles */
+ .join-section{
+    background-image: url('../assets/news-letter-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+
+ }
+ .join-section-content h1{
+   margin-bottom: 30px;
+   text-align: center;
+ }
+
+ .email-box{
+    /* width: 450px;
+    height: 40px; */
+    border: none;
+    
+     overflow: hidden;
+     max-width: 600px;
+  width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   
+ }
+ .email-box input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    flex: 1;
+   
+ }
+ .email-box input::placeholder{
+   padding-left: 20px;
+ }
+ .email-box button{
+    padding: 0 12px 0 12px;
+   
+ }
+
 
 @media screen and (max-width: 640px) {
     .card-container {
@@ -217,4 +264,12 @@
         height: 200px;
         
     }
+    .email-box input{
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    flex: 1;
+   
+ }
 }
