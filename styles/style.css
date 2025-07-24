@@ -34,7 +34,27 @@
 .banner-image{
     margin: 20px auto;
 }
+.plants-section{
+    margin: 20px auto;
+}
 
 /* Global styles */
 
 
+/* card Section */
+.card-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.card-header-text{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .card-container{
+        margin: 10px 20px;
+    }
+    
+}
