@@ -1,60 +1,146 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @theme {
-        --color-primary: #f5f8ff;
-      }
+    --color-primary: #f5f8ff;
+}
 
 @layer utilities {
     .font-inter {
         font-family: "Inter", sans-serif;
     }
+
     .font-noto-serif {
         font-family: "Noto Serif", serif;
     }
 }
-.text-left{
+
+.text-left {
     padding-left: 1rem;
-    
+
 }
 
-.header{
+.header {
     margin: 20px auto;
 }
-.hero{
+
+.hero {
     margin: 20px auto;
 }
-.banner-image{
+
+.banner-image {
     margin: 20px auto;
 }
-.plants-section{
-    margin: 20px auto;
+
+.plants-section {
+    margin: 20px auto 80px auto;
 }
 
 /* Global styles */
 
 
 /* card Section */
-.card-button{
+.card-button {
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
 }
-.card-header-text{
+
+.card-header-text {
     margin-bottom: 30px;
     margin-top: 20px;
 }
 
+
+
+.section {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 1140px;
+      margin: auto;
+      
+      overflow: visible;
+      gap: 20px;
+    }
+
+    .badge {
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px; /* increased size */
+      height: 120px;
+      z-index: 2;
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    .left img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .right ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+
+
 @media screen and (max-width: 640px) {
-    .card-container{
+    .card-container {
         margin: 10px 20px;
     }
-    
-}
+
+    .plant-lover-description {
+        margin-left: 30px;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: right; /* right align text */
+      }
+
+      .badge {
+        display: none;
+      }
+
+      .right {
+        padding-top: 20px;
+        text-align: left;
+      }
+
+      .right ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 90%;
+      }
+    }
