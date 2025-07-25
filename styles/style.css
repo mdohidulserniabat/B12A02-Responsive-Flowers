@@ -26,9 +26,12 @@
     padding-left: 1rem;
 
 }
-
+/* .navbar{
+    padding: 0 20px;
+} */
 .header {
     margin: 20px auto;
+    
 }
 
 .hero {
@@ -185,11 +188,18 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
-
+    
  }
  .join-section-content h1{
    margin-bottom: 30px;
    text-align: center;
+ }
+ .brand-footer {
+    padding-left: 20px;
+ }
+ .twitter{
+    padding-top: 8px;
+    height: 30px;
  }
 
  .email-box{
@@ -209,10 +219,12 @@
     border: none;
     outline: none;
     flex: 1;
+    background-color: white;
    
  }
  .email-box input::placeholder{
    padding-left: 20px;
+   
  }
  .email-box button{
     padding: 0 12px 0 12px;
@@ -231,8 +243,11 @@
 
 
 @media screen and (max-width: 640px) {
+    .header{
+        padding: 0 20px;
+    }
     .card-container {
-        margin: 10px 20px;
+        margin: 10px 15px;
     }
 
     .plant-lover-description {
@@ -288,4 +303,8 @@
     padding-left: 20px;
 
 }
+.brand-footer{
+    padding: 10px 0;
+ }
+
 }
